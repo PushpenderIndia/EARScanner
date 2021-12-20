@@ -64,6 +64,7 @@ $ pip3 install -r requirements.txt
 
 # Installing GoBuster (For More Installation Method, Visit: https://github.com/OJ/gobuster)
 # NOTE: GoBuster Tool is Only Required for using --fuzz-scan flag
+# PS: You need at least go 1.16.0 to compile gobuster.
 $ go install github.com/OJ/gobuster/v3@latest
 
 # Help Menu
