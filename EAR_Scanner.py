@@ -24,12 +24,12 @@ class EAR_Scanner:
         parser._optionals.title = f"{Fore.GREEN}Optional Arguments{Fore.YELLOW}"
         parser.add_argument("-u", "--url", dest="url", help=f"{Fore.GREEN}Scan Single URL for EAR{Fore.YELLOW}")
         parser.add_argument("-uL", "--url-list", dest="file_containing_urls", help=f"{Fore.GREEN}Provide a File Containing URLs {Fore.YELLOW}[PRO_TIP: {Fore.GREEN}Fuzz ALL URLs using tools such as ffuf,gobuster,disbuter,etc & then pass urls_list.txt using this argument{Fore.YELLOW}] [NOTE: {Fore.RED}One URL in One Line{Fore.YELLOW}].")    
-        parser.add_argument("-f", "--fuzz-scan", dest="fuzz_and_scan", help=f"{Fore.GREEN}Fuzz ALL URLs using FFUF Tool & Then Scan. Provide a domain for fuzzing. {Fore.YELLOW}") 
+        parser.add_argument("-f", "--fuzz-scan", dest="fuzz_and_scan", help=f"{Fore.GREEN}Provide a domain for scanning [It will Fuzz ALL URLs using GoBuster & Then It will scan them.] {Fore.YELLOW}") 
         parser.add_argument("-w", "--wordlist", dest="wordlist", help=f"{Fore.GREEN}Provide a wordlist for fuzzing. {Fore.YELLOW}[Only Use With {Fore.GREEN}--fuzz-scan{Fore.YELLOW}]. {Fore.WHITE}default=content_discovery_all.txt{Fore.YELLOW}", default='content_discovery_all.txt') 
         parser.add_argument("-t", "--timeout", dest="timeout", help=f"{Fore.GREEN}HTTP Request Timeout. {Fore.WHITE}default=60{Fore.YELLOW}", default=60)
         parser.add_argument("-th", "--thread", dest="ThreadNumber", help=f"{Fore.GREEN}Parallel HTTP Request Number. {Fore.WHITE}default=100{Fore.YELLOW}", default=100)
         parser.add_argument("-c", "--content-length", dest="ContentLength", help=f"{Fore.GREEN}Any Content Length for Confirming EAR Vulnerability. {Fore.WHITE}default=200{Fore.YELLOW}", default=200)
-        parser.add_argument("-o", "--output", dest="output", help=f"{Fore.GREEN}Output filename which will contain vulnerable urls. {Fore.WHITE}default=vulnerable.txt{Fore.YELLOW}", default='vulnerable.txt')
+        parser.add_argument("-o", "--output", dest="output", help=f"{Fore.GREEN}Output filename [Script will save vulnerable urls by given name]. {Fore.WHITE}default=vulnerable.txt{Fore.YELLOW}", default='vulnerable.txt')
 
         return parser.parse_args()
 
