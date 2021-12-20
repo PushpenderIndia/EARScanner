@@ -62,6 +62,10 @@ $ cd EARScanner
 $ sudo apt install python3-pip 
 $ pip3 install -r requirements.txt
 
+# Installing GoBuster (For More Installation Method, Visit: https://github.com/OJ/gobuster)
+# NOTE: GoBuster Tool is Only Required for using --fuzz-scan flag
+$ go install github.com/OJ/gobuster/v3@latest
+
 # Help Menu
 $ chmod +x EARScanner.py
 $ python3 EARScanner.py --help
