@@ -1,0 +1,14 @@
+admin/dashboard
+admin/dashboard.php
+admin/dashboard.asp
+admin/dashboard.aspx
+admin/dashboard.jsp
+admin/admin
+admin/admin.php
+admin/admin.asp
+admin/admin.aspx
+admin/admin.jsp
+admin/index
+admin/index.php
+admin/index.asp
+admin/index.aspx
